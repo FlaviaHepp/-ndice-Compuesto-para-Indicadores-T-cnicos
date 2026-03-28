@@ -138,3 +138,61 @@ gana el que puede procesarlos más rápido.**
 ---
 
 #DataEngineering #Quant #SQL #DataScience #Trading #Performance #Finanzas
+
+***
+⚙️ **Un pequeño cambio en la base de datos… una gran diferencia en velocidad.**
+
+En sistemas cuantitativos, no todo es modelo.
+
+A veces, el verdadero salto de calidad viene de algo mucho más simple:
+
+👉 **cómo accedés a los datos.**
+
+---
+
+📊 En este caso, optimicé el acceso a indicadores técnicos con un índice compuesto:
+
+```sql
+CREATE INDEX idx_indicadores_tiempo
+ON indicadores_tecnicos (ticker_id, fecha DESC);
+```
+
+---
+
+💡 ¿Por qué este índice?
+
+Porque la mayoría de los análisis financieros hacen esto:
+
+👉 Consultar un ticker específico
+👉 Priorizar los datos más recientes
+
+---
+
+🚀 Resultado:
+
+* Queries mucho más rápidas
+* Mejor performance en backtesting
+* Acceso eficiente a series temporales
+
+---
+
+🧠 Insight clave:
+**En datos financieros, el tiempo no es solo una dimensión…
+es la clave de acceso.**
+
+---
+
+🔍 Este tipo de optimización permite:
+
+✔️ Escalar análisis de múltiples activos
+✔️ Reducir latencia en cálculos
+✔️ Iterar más rápido en modelos
+
+---
+
+📉 Porque en quant, no alcanza con tener buenos indicadores…
+tenés que poder consultarlos en tiempo real.
+
+---
+
+#DataEngineering #Quant #SQL #TimeSeries #DataScience #Trading #Finanzas
