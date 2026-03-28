@@ -80,3 +80,61 @@ Este índice forma parte de una arquitectura analítica orientada a:
 
 ## 👤Autora
 Flavia Hepp Proyecto de SQL aplicó un análisis de riesgo basado en eventos.
+
+***
+⚙️ **El edge no siempre está en el modelo… a veces está en la base de datos.**
+
+Podés tener el mejor análisis cuantitativo del mundo…
+
+Pero si tus queries tardan segundos (o minutos),
+ya llegaste tarde.
+
+---
+
+📊 En este caso optimicé un sistema de análisis financiero creando índices clave:
+
+👉 `precios_diarios (ticker_id, fecha DESC)`
+👉 `indicadores_tecnicos (ticker_id, fecha DESC)`
+👉 `eventos_corporativos (ticker_id, fecha, tipo_evento)`
+
+---
+
+💡 ¿Qué cambia con esto?
+
+* Consultas mucho más rápidas
+* Mejor acceso a datos recientes (clave en mercados)
+* Menor costo computacional
+
+---
+
+🚨 ¿Por qué importa?
+
+Porque en análisis financiero:
+
+👉 El tiempo de ejecución **no es técnico… es estratégico**
+
+* Backtesting más eficiente
+* Señales en tiempo real
+* Mejor capacidad de iteración
+
+---
+
+🧠 Insight clave:
+**No gana el que tiene más datos…
+gana el que puede procesarlos más rápido.**
+
+---
+
+🔍 Este tipo de optimización permite:
+
+✔️ Escalar sistemas cuantitativos
+✔️ Reducir latencia en análisis
+✔️ Construir pipelines más robustos
+
+---
+
+📉 En data science aplicado a finanzas, la infraestructura también es alpha.
+
+---
+
+#DataEngineering #Quant #SQL #DataScience #Trading #Performance #Finanzas
